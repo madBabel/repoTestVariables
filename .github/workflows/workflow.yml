@@ -4,14 +4,13 @@ on:
     inputs:
       entorno:
         type: environment
-        description: "Environment to use"
-        default: "int"
+        description: "Environment to use"    
     
 
 jobs:
   job1:    
     runs-on: ubuntu-latest
-    environment: int
+    environment: ${{inputs.entorno}}
     steps:
       - name: Print  var
         run: echo "The value of VAR_ROLE es ${{vars.VAR_ROLE}} "
