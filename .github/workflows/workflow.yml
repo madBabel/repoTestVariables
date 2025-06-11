@@ -1,6 +1,12 @@
 name: "Test variables"
-on: 
-  push:
+on:  
+  workflow_dispatch:
+    inputs:
+      entorno:
+        type: environment
+        description: "Environment to use"
+        default: "int"
+    
 
 jobs:
   job1:    
