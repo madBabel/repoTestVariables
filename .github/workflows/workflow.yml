@@ -1,0 +1,11 @@
+name: "Test variables"
+on: 
+  push:
+
+jobs:
+  job1:    
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print  var
+        run: echo "The value of VAR_ROLE es ${{vars.VAR_ROLE}} "
+       
