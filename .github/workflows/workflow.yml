@@ -22,6 +22,7 @@ jobs:
             | 
             echo "The value of MY_ENV_VAR is $MY_ENV_VAR"
             echo "The value of VAR_ROLE es ${{ vars.VAR_ROLE }}"
+            exit 1
        
       - if: ${{ failure() }}  
         name: Ejecuto si fallo        
