@@ -24,7 +24,7 @@ jobs:
             echo "The value of VAR_ROLE es ${{ vars.VAR_ROLE }}"
             exit 1
        
-      - if: ${{ failure() }}  
+      - if: ${{ always() }}  
         name: Ejecuto si fallo        
         run: 
             |
